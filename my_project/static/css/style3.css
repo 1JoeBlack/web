@@ -1,0 +1,19 @@
+html *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* background: url(/static/img/city.jpg) -50px -50px no-repeat; */
+    background: url(/static/img/desk2.jpg) no-repeat;
+}
+
+.jumbotron{
+    margin-top: 6rem;
+    padding:2rem;
+    background-color: rgba(95, 95, 95, 0.5);
+    border-radius: 3rem;
+}
+
+h1{
+    color: rgb(207, 251, 177);
+}

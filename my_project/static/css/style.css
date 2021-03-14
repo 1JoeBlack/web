@@ -1,0 +1,50 @@
+html *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection{
+    background-color:rgb(207, 251, 177);
+    color: black;
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    background: rgb(207, 251, 177);
+    /* background: linear-gradient(to top, rgb(207, 251, 177),rgb(85, 179, 27)); */
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(255, 115, 0);
+
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu{
+    background: rgb(207, 251, 177);
+}
+
+.dropdown-item{
+    background: rgb(207, 251, 177);
+    color: black;
+    font-weight: 600;
+}
+.dropdown-item:hover{
+    background: none;
+    color: rgb(255, 115, 0);
+}
+
+.dropdown-item:active{
+    color: rgb(255, 0, 234);
+}
+.navbar-light .navbar-brand{
+    color: black;
+}
+.navbar-light .navbar-brand:hover{
+    color: rgb(255, 115, 0);
+}
+

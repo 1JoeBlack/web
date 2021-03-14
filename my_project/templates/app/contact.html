@@ -1,0 +1,64 @@
+{% extends 'app/base.html' %}
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+
+<section class="index-sec">
+    
+<div class="row" >
+    <div class="col-md-12 col-lg-8 container">
+        <div class="form-group">
+        <form action="" method="post">
+        {% csrf_token %}
+
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="mt-3">
+                    {{form.message}}
+                </div>
+            </div>
+
+            <div class="col-md-6"> 
+
+                <div class="mb-3 mt-3">
+                    {{form.first_name}}
+                </div>
+
+                <div class="mb-3">
+                    {{form.last_name}}
+                </div>
+
+                <div class="mb-3">
+                    {{form.email}}
+                </div>
+
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      Agree to provide this information
+                    </label>
+                  </div>
+            
+                <div class="text-center mb-3 ">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                </div> 
+
+            </div>
+            
+        </div>
+      
+        </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock %}
+</section>

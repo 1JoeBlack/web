@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style3.css' %}">
+
+<div class="p-3 d-flex flex-column align-items-center">
+    <h1 class="mb-0 fw-bolder">Thank you!</h1><br>
+    <h6 class="mb-0 fw-medium text-white">The form was submitted successfully.</h6>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+
+<script src="{% static 'js/thanks.js' %}"></script>
+
+{% endblock %}
